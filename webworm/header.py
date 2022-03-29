@@ -203,11 +203,9 @@ allHeaders = ['Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:21.0) Gecko/20130331 F
               'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/534.16+ (KHTML, like Gecko) Version/5.0.3 Safari/533.19.4']
 
 
-# 获得随机agent
 def __getRandomAgent__():
     return allHeaders[random.randint(0, len(allHeaders) - 1)]
 
 
-# 获得随机header，需要其他参数，后期手动字典添加
 def getRandomHeader():
     return {"User-Agent": __getRandomAgent__()}

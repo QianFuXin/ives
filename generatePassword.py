@@ -40,3 +40,8 @@ def pinYin(info):
     p = Pinyin()
     transformed = p.get_pinyin(info).replace("-", "")
     return transformed
+
+
+print(randomPassword(25))
+
+
